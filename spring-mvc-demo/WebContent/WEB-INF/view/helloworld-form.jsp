@@ -5,8 +5,8 @@
 </head>
 <body>
 
-	<!-- We will send info to /processForm -->
-	<form action="processForm" method= "GET">
+	<!-- We will send info to /processFormVesrionTwo -->
+	<form action="processFormVesrionTwo" method= "GET">
 		<input type="text" name="studentName"
 		placeholder="Hey what's your name?"/> 
 		
