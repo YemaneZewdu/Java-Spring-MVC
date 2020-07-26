@@ -22,11 +22,14 @@
 		<br><br>
 		
 		Country:
-		<form:select path="country">
 		
+		<form:select path="country">
+		<!-- 
 			<form:option value="Ethiopia" label="Ethiopia"/>
 			<form:option value="Brazil" label="Brazil"/>
 			<form:option value="France" label="France"/>
+			-->
+			<form:options items="${student.countryOptions}"/>
 		</form:select>
 		
 		<input type="submit" value="Submit"/>
