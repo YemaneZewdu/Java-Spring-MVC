@@ -8,7 +8,7 @@
 
 <body>
 
-The student ${student.firstName}  ${student.lastName} is confirmed for the class
+The student ${student.firstName}  ${student.lastName} from ${student.country} is confirmed for the class
 
 
 </body>

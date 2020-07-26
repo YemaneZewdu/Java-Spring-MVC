@@ -21,6 +21,14 @@
 		Last Name: <form:input path="LastName"/>
 		<br><br>
 		
+		Country:
+		<form:select path="country">
+		
+			<form:option value="Ethiopia" label="Ethiopia"/>
+			<form:option value="Brazil" label="Brazil"/>
+			<form:option value="France" label="France"/>
+		</form:select>
+		
 		<input type="submit" value="Submit"/>
 		
 	</form:form>
