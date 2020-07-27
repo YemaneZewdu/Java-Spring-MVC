@@ -12,8 +12,9 @@
 
 <h2>Welcome!!</h2>
 
-Customer: ${customer.firstName} is registered successfully
-
+Customer: ${customer.firstName} is registered successfully <br><br>
+Customer's age:  ${customer.age} <br><br>
+Postal Code: ${customer.postalCode}
 </body>
 
 </html>

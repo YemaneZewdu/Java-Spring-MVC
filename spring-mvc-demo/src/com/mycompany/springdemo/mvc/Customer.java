@@ -1,6 +1,9 @@
 package com.mycompany.springdemo.mvc;
 
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
 public class Customer {
@@ -12,6 +15,15 @@ public class Customer {
 	@NotNull(message="is required")
 	@Size(min=1,message="is required")
 	private String lastName;
+	
+	@NotNull(message="is required")
+	@Min(value=18, message="must be 18 years or above")
+	@Max(value=38, message="too old")
+	//private int age;  // changed to resolve the String->int casting issue with @NotNull
+	private Integer age;
+	
+	@Pattern(regexp="^[a-zA-Z0-9]{5}", message="only 5 characters allowed")
+	private String postalCode;
 
 	public String getFirstName() {
 		return firstName;
@@ -27,6 +39,22 @@ public class Customer {
 
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
+	}
+
+	public Integer getAge() {
+		return age;
+	}
+
+	public void setAge(Integer age) {
+		this.age = age;
+	}
+
+	public String getPostalCode() {
+		return postalCode;
+	}
+
+	public void setPostalCode(String postalCode) {
+		this.postalCode = postalCode;
 	}
 	
 	
