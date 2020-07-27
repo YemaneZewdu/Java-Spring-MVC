@@ -14,7 +14,8 @@
 
 Customer: ${customer.firstName} is registered successfully <br><br>
 Customer's age:  ${customer.age} <br><br>
-Postal Code: ${customer.postalCode}
+Postal Code: ${customer.postalCode} <br><br>
+Course code:  ${customer.courseCode}
 </body>
 
 </html>
